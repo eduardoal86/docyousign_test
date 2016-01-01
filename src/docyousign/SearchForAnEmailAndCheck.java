@@ -26,16 +26,7 @@ public class SearchForAnEmailAndCheck {
 
 	// Public method to locate a message by subject
 	public void listMessagesWithSubject() {
-		// WebElement messageSub = driver.findElement(By.className("J-M
-		// J-M-ayU"));
-		// messageSub.click();
-		// ArrayList<WebElement> messageSubject = new ArrayList<>();
-		// messageSubject = (ArrayList<WebElement>)
-		// driver.findElements(By.xpath("//*[@id=\":2y\"]"));
-		// messageSubject.get(0).click();
 		WebElement firstMsg = driver.findElement(By.className("y6"));
-		// ("/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[5]"
-		// + "/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div[2]/span[1]/b"));
 		firstMsg.click();
 	}
 
@@ -52,11 +43,5 @@ public class SearchForAnEmailAndCheck {
 
 		return destination;
 	}
-	
-	// Public method to check destination`s message
-	/*public WebElement getBeginingMessageText() {
-		WebElement bodyMessage = driver.findElement(By.xpath("contains(text(),'Hello']"));
-		return bodyMessage;
-	}*/
 
 }
