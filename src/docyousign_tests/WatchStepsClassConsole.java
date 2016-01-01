@@ -61,8 +61,8 @@ public class WatchStepsClassConsole {
 				bufferedW.write(description.getDisplayName() + " " + "success!");
 				bufferedW.write("<br/>"); 
 				}
-				catch (Exception e1) {
-				System.out.println(e1.getMessage());
+				catch (Exception e) {
+				System.out.println(e.getMessage());
 				}
 		}
 
@@ -73,8 +73,8 @@ public class WatchStepsClassConsole {
 				bufferedW.write(description.getDisplayName() + " " + e.getClass().getSimpleName());
 				bufferedW.write("<br/>"); 
 				}
-				catch (Exception e2) {
-				System.out.println(e2.getMessage());
+				catch (Exception failedMessage) {
+				System.out.println(failedMessage.getMessage());
 				}
 		}
 	};

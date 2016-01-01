@@ -2,6 +2,7 @@ package docyousign_tests;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -52,5 +53,5 @@ public class SendAnEmailAndCheck_Test {
 		assertEquals("Eduardo Lieuthier", searchMail.getDestinationContact().getText());
 		
 	}
-
+	
 }

@@ -2,12 +2,14 @@ package docyousign_tests;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+
 import docyousign.GmailLoginPage;
 
 public class Login_Test extends WatchStepsClassConsole {
@@ -34,12 +36,8 @@ public class Login_Test extends WatchStepsClassConsole {
 	@Test
 	public void loginAsUserWithWrongCredentials() {
 		page.loginAs("automation2355@gmail.com", "senhainvalida");
-		page.checkMessageErrorIsVisible();
-	}
-
-	@AfterMethod
-	public void tearDown(ITestResult result) {
-		driver.quit();
+		//page.checkMessageErrorIsVisible();
+		assertEquals(true, page.checkMessageErrorIsVisible());
 	}
 
 }
