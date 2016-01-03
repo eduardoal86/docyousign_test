@@ -34,7 +34,7 @@ public class SendAnEmailAndCheck_Test {
 		//
 		page.loginAs("automation2355@gmail.com", "automation");
 		
-		page.waitImplicit(3);
+		page.waitImplicit(5);
 		gsendMail.clickCompose();
 		page.waitImplicit(2);
 		gsendMail.fillDestinationContactField();
