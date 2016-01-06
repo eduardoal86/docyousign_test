@@ -26,7 +26,7 @@ public class SearchForAnEmailAndCheck {
 
 	// Public method to locate a message by subject
 	public void listMessagesWithSubject() {
-		WebElement firstMsg = driver.findElement(By.className("y6"));
+		WebElement firstMsg = driver.findElement(By.className("xS"));
 		firstMsg.click();
 	}
 

@@ -36,7 +36,7 @@ public class SendAnEmailAndCheck_Test {
 		
 		page.waitImplicit(5);
 		gsendMail.clickCompose();
-		page.waitImplicit(2);
+		page.waitImplicit(3);
 		gsendMail.fillDestinationContactField();
 		gsendMail.fillSubjectEmailField();
 		gsendMail.typeMessageEmail();
